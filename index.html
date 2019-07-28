@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <base href="/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <title>Service worker example</title>
+  <link rel="manifest" href="/manifest.json" />
+  <link href="assets/css/desktop.css" type="text/css" />
+  <style type="text/css">
+    .add-to-home {
+      display: none;  /* Default to display none if add to home compatible in phone then only it will display:block */
+    }
+  </style>
+</head>
+
+<body>
+  <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
+  </script>
+  <button class="add-to-home">
+    <i class="homescreen-icon"></i>
+    Add to Home screen
+  
+    <i class="close-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><title>close</title><path fill="#fff" d="M12 .69L11.31 0 6 5.31.69 0 0 .69 5.31 6 0 11.31l.69.69L6 6.69 11.31 12l.69-.69L6.69 6 12 .69" data-name="modal-close-btn"></path></svg>
+    </i>
+  </button>
+</body>
+</html>
