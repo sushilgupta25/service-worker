@@ -1,0 +1,28 @@
+{
+  "name": "My App Lite",
+  "short_name": "My App Lite",
+  "description": "My app lite demo",
+  "gcm_sender_id":"<sender_id>",
+  "theme_color": "#fc2779",
+  "background_color": "#fc2779",
+  "display": "standalone",
+  "start_url": "/?start_url=homescreenicon",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/assets/mobile/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/mobile/images/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/mobile/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
